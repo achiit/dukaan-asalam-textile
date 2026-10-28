@@ -1,0 +1,276 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Aslam Textiles</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind:wght@400;500;600&display=swap">
+<style>
+/* Layout: zari-border saree-style stripes, single column, big hero, gallery grid, order + address */
+:root{
+  --bg:#fbf4ea; --fg:#2a1216; --muted:#6d5558; --maroon:#7a1230; --maroon-d:#5a0c22; --gold:#b8862b; --card:#fffaf2; --line:#e6d3b4; --wa:#1f8f4e; --on-maroon:#fff4de;
+  --display:'Yatra One','Hind',Georgia,serif; --body:'Hind','Noto Sans Devanagari',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0c10;--fg:#f6e9d6;--muted:#c4a9a2;--maroon:#a8284a;--maroon-d:#7a1230;--gold:#e0b25a;--card:#26141a;--line:#4a2b33;--wa:#34b36b;--on-maroon:#fff4de;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a0c10;--fg:#f6e9d6;--muted:#c4a9a2;--maroon:#a8284a;--maroon-d:#7a1230;--gold:#e0b25a;--card:#26141a;--line:#4a2b33;--wa:#34b36b;--on-maroon:#fff4de;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;padding-block:0}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+a{color:inherit}
+.zari{height:14px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,var(--maroon) 10px 20px,var(--gold) 20px 24px,transparent 24px 30px);border-block:2px solid var(--gold)}
+header{background:var(--maroon-d);color:var(--on-maroon)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-block:14px}
+.logo{font-family:var(--display);font-size:1.35rem;letter-spacing:.02em}
+nav{display:flex;gap:18px;font-size:.95rem;flex-wrap:wrap}
+nav a{text-decoration:none;opacity:.9}nav a:hover{opacity:1;text-decoration:underline}
+.hero{background:var(--maroon);color:var(--on-maroon);padding-block:56px 64px}
+.hero .wrap{display:grid;gap:20px}
+.eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-size:clamp(2.4rem,8vw,4.6rem)}
+.hero p{max-width:34em;margin:0;font-size:1.1rem;opacity:.95}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;border:2px solid transparent;font:600 1rem var(--body);text-decoration:none;cursor:pointer}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border-color:var(--gold);color:var(--on-maroon);background:transparent}
+.btn-line{border-color:var(--maroon);color:var(--maroon);background:transparent}
+:root[data-theme="dark"] .btn-line{color:var(--gold);border-color:var(--gold)}
+section{padding-block:56px}
+.sec-head{display:grid;gap:8px;margin-bottom:28px}
+.sec-head h2{font-size:clamp(1.8rem,5vw,2.6rem);color:var(--maroon)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sec-head h2{color:var(--gold)}}
+:root[data-theme="dark"] .sec-head h2{color:var(--gold)}
+.sec-head p{margin:0;color:var(--muted);max-width:40em}
+.about{display:grid;gap:28px;grid-template-columns:1fr}
+@media(min-width:760px){.about{grid-template-columns:1.2fr 1fr}}
+.about p{margin:0 0 12px;min-width:0}
+.facts{display:grid;gap:10px;align-content:start}
+.fact{border-left:4px solid var(--gold);padding:6px 0 6px 14px;background:var(--card)}
+.fact b{display:block;font-family:var(--display);font-weight:400;font-size:1.15rem}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.item{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.ph{aspect-ratio:4/5;width:100%;object-fit:cover;display:block;background:var(--line)}
+.ph-empty{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:16px;color:var(--muted);font-size:.9rem;background:repeating-linear-gradient(45deg,var(--card) 0 12px,var(--line) 12px 13px)}
+.item .body{padding:12px 14px 14px;display:grid;gap:8px}
+.item h3{font-size:1.15rem}
+.price{color:var(--maroon);font-weight:600}
+:root[data-theme="dark"] .price{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .price{color:var(--gold)}}
+.item .btn{padding:9px 14px;font-size:.92rem;justify-content:center}
+.del{background:none;border:0;color:var(--muted);font:inherit;font-size:.82rem;cursor:pointer;text-decoration:underline;justify-self:start;padding:0}
+details.owner{margin-top:28px;border:1px dashed var(--gold);border-radius:6px;background:var(--card)}
+details.owner summary{padding:14px 16px;cursor:pointer;font-weight:600}
+.owner form{display:grid;gap:12px;padding:0 16px 16px}
+label{display:grid;gap:4px;font-weight:500;font-size:.92rem}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);width:100%;min-width:0}
+.row{display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:560px){.row{grid-template-columns:1fr 1fr}}
+.note{font-size:.85rem;color:var(--muted);margin:0}
+.order{background:var(--card);border-block:1px solid var(--line)}
+.order form{display:grid;gap:14px;max-width:560px}
+.addr{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:760px){.addr{grid-template-columns:1fr 1fr}}
+.addr-card{border:1px solid var(--line);background:var(--card);padding:20px;border-radius:6px;display:grid;gap:10px;align-content:start;min-width:0}
+.addr-card address{font-style:normal;font-size:1.05rem}
+.addr-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.addr-card dt{color:var(--muted)}.addr-card dd{margin:0}
+footer{background:var(--maroon-d);color:var(--on-maroon);padding-block:28px 40px;text-align:center}
+footer p{margin:4px 0;font-size:.92rem;opacity:.9}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--fg);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.92rem;z-index:20}
+@media(prefers-reduced-motion:no-preference){.item{transition:transform .2s}.item:hover{transform:translateY(-3px)}}
+</style>
+
+<header>
+  <div class="wrap top">
+    <div class="logo">Aslam Textiles</div>
+    <nav aria-label="Menu">
+      <a href="#about">Saree ke baare mein</a>
+      <a href="#collection">Collection</a>
+      <a href="#order">Order</a>
+      <a href="#address">Pata</a>
+    </nav>
+  </div>
+  <div class="zari" aria-hidden="true"></div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Mohandabad Gohana · Mau · Uttar Pradesh</span>
+    <h1>Aslam Textiles</h1>
+    <p>A brand you can trust. Sundar, asli aur parampara se judi hui sarees, seedhe hamari dukaan se aapke ghar tak.</p>
+    <div class="btns">
+      <a class="btn btn-wa" id="heroWa" href="#order" target="_blank" rel="noopener">WhatsApp par order karein</a>
+      <a class="btn btn-ghost" href="#collection">Sarees dekhein</a>
+    </div>
+  </div>
+</div>
+<div class="zari" aria-hidden="true"></div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="sec-head"><span class="eyebrow" style="color:var(--gold)">Saree ke baare mein</span><h2>Hazaaron saal purani parampara</h2></div>
+      <p>Saree ek paramparik poshak hai, jo hazaaron saalon se hamari sanskriti ka hissa rahi hai. Shaadi ho, tyohaar ho ya rozmarra, saree har mauke par shaan badhati hai.</p>
+      <p>Aslam Textiles mein hum isi parampara ko bharose ke saath aap tak pahunchate hain: achhi quality, saaf daam aur seedhi baat.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>Bharosemand brand</b>Sahi kapda, sahi daam.</div>
+      <div class="fact"><b>Photo dekhein, order karein</b>Pasand aayi saree par seedha WhatsApp.</div>
+      <div class="fact"><b>Mau ki bunai ki parampara</b>Mau aur Banaras ke kapde ki pehchaan.</div>
+    </div>
+  </div>
+</section>
+
+<section id="collection" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow" style="color:var(--gold)">Hamara collection</span><h2>Nayi sarees</h2><p>Jo saree pasand aaye, uske neeche WhatsApp button dabayein. Hum aapko photo aur daam bhej denge.</p></div>
+    <div class="grid" id="grid"></div>
+
+    <details class="owner" id="ownerBox">
+      <summary>Dukaan malik ke liye: apni saree ki photo jodein</summary>
+      <form id="addForm">
+        <label>Saree ki photo (ek saath kai chun sakte hain)
+          <input type="file" id="photos" accept="image/*" multiple required>
+        </label>
+        <div class="row">
+          <label>Saree ka naam <input id="pname" placeholder="Jaise: Red Banarasi Silk"></label>
+          <label>Daam (Rs.) <input id="pprice" inputmode="numeric" placeholder="Jaise: 2500"></label>
+        </div>
+        <button class="btn btn-line" type="submit">Photo jodein</button>
+        <p class="note">Ye photos sirf is phone ya browser mein dikhti hain. Sabko dikhane ke liye photos mujhe chat mein bhejein, main inhe website mein hamesha ke liye laga dunga.</p>
+      </form>
+    </details>
+  </div>
+</section>
+
+<section id="order" class="order">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow" style="color:var(--gold)">Order</span><h2>WhatsApp par order karein</h2><p>Form bharein, WhatsApp khulega aur aapka message taiyaar hoga. Bas bhej dein.</p></div>
+    <form id="orderForm">
+      <label>Aapka naam <input id="oname" required autocomplete="name"></label>
+      <label>Kaun si saree chahiye?
+        <select id="oitem"><option value="">Collection se chunein ya neeche likhein</option></select>
+      </label>
+      <label>Aapka sandesh (rang, kapda, budget, shehar) <textarea id="omsg" rows="3" placeholder="Jaise: laal rang ki silk saree, shaadi ke liye, budget 3000"></textarea></label>
+      <button class="btn btn-wa" type="submit">WhatsApp par bhejein</button>
+    </form>
+  </div>
+</section>
+
+<section id="address">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow" style="color:var(--gold)">Dukaan ka pata</span><h2>Hamse milne aayein</h2></div>
+    <div class="addr">
+      <div class="addr-card">
+        <address>Aslam Textiles<br>Mahrupur, near Chowk<br>Mohandabad Gohana, Mau<br>Uttar Pradesh</address>
+        <dl>
+          <dt>Samay</dt><dd>Roz subah 10 baje se raat 8:30 baje tak</dd>
+          <dt>Phone</dt><dd id="phoneText">Jald upalabdh</dd>
+        </dl>
+        <div class="btns">
+          <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mahrupur+Mohandabad+Gohana+Mau+Uttar+Pradesh">Map mein dekhein</a>
+          <button class="btn btn-line" type="button" id="copyAddr">Pata copy karein</button>
+        </div>
+      </div>
+      <div class="addr-card">
+        <h3 style="color:var(--maroon)">Ghar baithe order</h3>
+        <p style="margin:0">Dukaan na aa sakein to koi baat nahi. Photo dekhein, WhatsApp par baat karein aur order de dein. Delivery ke baare mein dukaan se puchh lein.</p>
+        <a class="btn btn-wa" id="addrWa" href="#order" target="_blank" rel="noopener">WhatsApp par baat karein</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="zari" aria-hidden="true" style="margin-bottom:22px"></div>
+  <div class="wrap">
+    <div class="logo">Aslam Textiles</div>
+    <p>A brand you can trust</p>
+    <p>Mahrupur, near Chowk, Mohandabad Gohana, Mau, Uttar Pradesh</p>
+  </div>
+</footer>
+
+<script>
+// Dukaan ka WhatsApp number yahan likhein, country code ke saath, bina + ya space. Jaise: 919876543210
+var WA_NUMBER = '';
+var ADDRESS = 'Aslam Textiles, Mahrupur, near Chowk, Mohandabad Gohana, Mau, Uttar Pradesh';
+var DB='aslam-textiles', STORE='sarees', items=[];
+
+function waLink(text){
+  var base = WA_NUMBER ? 'https://wa.me/'+WA_NUMBER : 'https://wa.me/';
+  return base+'?text='+encodeURIComponent(text);
+}
+function toast(t){var d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},2200)}
+
+var hello='Namaste Aslam Textiles, mujhe sarees ke baare mein jaankari chahiye.';
+document.getElementById('heroWa').href=waLink(hello);
+document.getElementById('addrWa').href=waLink(hello);
+if(WA_NUMBER){document.getElementById('phoneText').textContent='+'+WA_NUMBER}
+
+/* IndexedDB: photos sirf is browser mein */
+function openDb(){return new Promise(function(res,rej){
+  try{var r=indexedDB.open(DB,1);
+  r.onupgradeneeded=function(){r.result.createObjectStore(STORE,{keyPath:'id',autoIncrement:true})};
+  r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}catch(e){rej(e)}})}
+function allItems(){return openDb().then(function(db){return new Promise(function(res,rej){
+  var q=db.transaction(STORE).objectStore(STORE).getAll();q.onsuccess=function(){res(q.result)};q.onerror=function(){rej(q.error)}})}).catch(function(){return []})}
+function putItem(o){return openDb().then(function(db){return new Promise(function(res,rej){
+  var t=db.transaction(STORE,'readwrite');t.objectStore(STORE).add(o);t.oncomplete=res;t.onerror=function(){rej(t.error)}})})}
+function delItem(id){return openDb().then(function(db){return new Promise(function(res){
+  var t=db.transaction(STORE,'readwrite');t.objectStore(STORE).delete(id);t.oncomplete=res})})}
+
+function shrink(file){return new Promise(function(res,rej){
+  var fr=new FileReader();
+  fr.onload=function(){var im=new Image();im.onload=function(){
+    var max=900,s=Math.min(1,max/Math.max(im.width,im.height));
+    var c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);
+    c.getContext('2d').drawImage(im,0,0,c.width,c.height);res(c.toDataURL('image/jpeg',.82))};
+    im.onerror=rej;im.src=fr.result};
+  fr.onerror=rej;fr.readAsDataURL(file)})}
+
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+function render(){
+  var g=document.getElementById('grid'),sel=document.getElementById('oitem');
+  var keep=sel.value;
+  sel.innerHTML='<option value="">Collection se chunein ya neeche likhein</option>';
+  if(!items.length){
+    var labels=['Silk saree','Cotton saree','Shaadi ki saree'];
+    g.innerHTML=labels.map(function(l){return '<div class="item"><div class="ph-empty">'+l+'<br>Yahan aapki photo aayegi</div><div class="body"><h3>'+l+'</h3><span class="note">Namuna, photo jodne par badal jayega</span><a class="btn btn-wa" target="_blank" rel="noopener" href="'+waLink('Namaste Aslam Textiles, mujhe '+l+' ke baare mein jaankari chahiye.')+'">WhatsApp par order</a></div></div>'}).join('');
+    return;
+  }
+  g.innerHTML=items.map(function(it){
+    var nm=it.name||'Saree #'+it.id;
+    var msg='Namaste Aslam Textiles, mujhe ye saree chahiye: '+nm+(it.price?' (Rs. '+it.price+')':'')+'. Kripya jaankari bhejein.';
+    return '<div class="item"><img class="ph" alt="'+esc(nm)+'" src="'+it.img+'" loading="lazy"><div class="body"><h3>'+esc(nm)+'</h3>'+(it.price?'<span class="price">Rs. '+esc(it.price)+'</span>':'')+'<a class="btn btn-wa" target="_blank" rel="noopener" href="'+waLink(msg)+'">WhatsApp par order</a><button class="del" data-id="'+it.id+'" type="button">Hatayein</button></div></div>'}).join('');
+  items.forEach(function(it){var o=document.createElement('option');o.value=it.name||'Saree #'+it.id;o.textContent=o.value;sel.appendChild(o)});
+  sel.value=keep;
+}
+function load(){allItems().then(function(r){items=r;render()})}
+
+document.getElementById('addForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var files=Array.prototype.slice.call(document.getElementById('photos').files);
+  var name=document.getElementById('pname').value.trim(),price=document.getElementById('pprice').value.trim();
+  if(!files.length)return;
+  Promise.all(files.map(function(f,i){return shrink(f).then(function(d){
+    return putItem({img:d,name:files.length>1&&name?name+' '+(i+1):name,price:price})})}))
+  .then(function(){e.target.reset();toast('Photo jud gayi');load()})
+  .catch(function(){toast('Photo nahi judi, dobara koshish karein')});
+});
+document.getElementById('grid').addEventListener('click',function(e){
+  var b=e.target.closest('.del');if(!b)return;
+  delItem(Number(b.dataset.id)).then(load);
+});
+document.getElementById('orderForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('oname').value.trim(),it=document.getElementById('oitem').value,m=document.getElementById('omsg').value.trim();
+  var t='Namaste Aslam Textiles, mera naam '+n+' hai.'+(it?' Mujhe ye saree chahiye: '+it+'.':'')+(m?' '+m:'');
+  window.open(waLink(t),'_blank')||(location.href=waLink(t));
+});
+document.getElementById('copyAddr').addEventListener('click',function(){
+  var done=function(){toast('Pata copy ho gaya')};
+  try{navigator.clipboard.writeText(ADDRESS).then(done,function(){toast(ADDRESS)})}catch(e){toast(ADDRESS)}
+});
+render();load();
+</script>
+
+</body></html>
